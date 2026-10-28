@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SFSHS Review Hub</title>
+  <meta name="description" content="Reviewers, handouts and practice quizzes from your teachers. Works offline.">
+  <meta name="theme-color" content="#0b6b55">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Review Hub">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top" id="top" hidden></header>
+  <main><div class="wrap" id="app"><p class="muted" style="padding:40px 0">Loading Review Hub…</p></div></main>
+  <div class="modal" id="modal" hidden><div class="sheet" role="dialog" aria-modal="true" id="sheet" tabindex="-1"></div></div>
+  <div class="toast" id="toast" hidden role="status" aria-live="polite"></div>
+  <noscript><p style="padding:20px">Review Hub needs JavaScript. Turn it on in your browser settings.</p></noscript>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "SFSHS Review Hub",
+  "short_name": "Review Hub",
+  "description": "Reviewers, handouts and practice quizzes from your teachers at San Francisco Senior High School. Works offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f3f6f4",
+  "theme_color": "#0b6b55",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
