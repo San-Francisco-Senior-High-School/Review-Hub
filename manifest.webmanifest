@@ -1,7 +1,7 @@
 {
-  "name": "SFSHS Review Hub",
-  "short_name": "Review Hub",
-  "description": "Reviewers, handouts and practice quizzes from your teachers at San Francisco Senior High School. Works offline.",
+  "name": "REVIEW+ · San Francisco Senior High School",
+  "short_name": "REVIEW+",
+  "description": "Reviewers, handouts and practice quizzes from your teachers. Works offline.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

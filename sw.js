@@ -1,8 +1,9 @@
-/* Review Hub service worker: keeps the app working with no internet.
+/* REVIEW+ service worker: keeps the app working with no internet.
  * When you change any app file, raise the number in CACHE so phones get the update. */
-const CACHE = 'reviewhub-v1';
+const CACHE = 'reviewhub-v2';
 const SHELL = [
-  './', './index.html', './styles.css', './app.js', './config.js', './manifest.webmanifest',
+  './', './index.html', './styles.css', './config.js', './manifest.webmanifest',
+  './js/core.js', './js/quiz.js', './js/student.js', './js/teacher.js', './js/admin.js', './js/reports.js', './js/main.js',
   './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-32.png'
 ];
 
@@ -24,7 +25,6 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return; // the Google server is handled by the app itself
 
   if (req.mode === 'navigate') {
-    // Pages: try the network, fall back to the saved copy when offline.
     event.respondWith(
       fetch(req).then(res => { const copy = res.clone(); caches.open(CACHE).then(c => c.put('./index.html', copy)); return res; })
         .catch(() => caches.match('./index.html'))
